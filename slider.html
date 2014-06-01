@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="slider.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>slider practice</title>
+
+    <link rel="stylesheet" href="slider.css">
+  </head>
+
+<body>
+
+  <div class="slider">
+    <ul class="box">
+      <li><img src="img/1.png"></li>
+      <li><img src="img/2.png"></li>
+      <li><img src="img/3.png"></li>
+      <li><img src="img/4.png"></li>
+    </ul>
+  </div>
+
+  <script>
+    var sliders = []
+    $('.slider').each(function() {
+      sliders.push(new Slider(this))
+    })
+  </script>
+    
+  <div class="slider-nav">
+    <ul>
+      <li><a href="javascript:sliders[0].goToPrev()">Prev</a></li>
+      <li><a href="javascript:sliders[0].goToNext()">Next</a></li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
