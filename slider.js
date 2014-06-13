@@ -30,3 +30,4 @@ var Slider = function() { this.initialize.apply(this, arguments) }
       this.goTo(this.currentIndex + 1)
     }
   }
+

@@ -14,17 +14,44 @@
 <body>
 
   <div class="slider">
-    <ul class="box">
-      <li><img src="img/daisy_dark.png"></li>
-      <li><img src="img/gus_dark.png"></li>
-      <li><img src="img/tammy_dark.png"></li>
+    <ul class="box1">
+      <li><img src="img/11.png"></li>
+      <li><img src="img/12.png"></li>
+      <li><img src="img/13.png"></li>
+    </ul>
+  </div>
+
+  <div class="slider2">
+    <ul class="box2">
+      <li><img src="img/21.png"></li>
+      <li><img src="img/22.png"></li>
+      <li><img src="img/23.png"></li>
+    </ul>
+  </div>
+
+  <div class="slider3">
+    <ul class="box3">
+      <li><img src="img/31.png"></li>
+      <li><img src="img/32.png"></li>
+      <li><img src="img/33.png"></li>
     </ul>
   </div>
 
   <script>
     var sliders = []
+    var sliders2 = []
+    var sliders3 = []
+
     $('.slider').each(function() {
       sliders.push(new Slider(this))
+    })
+
+    $('.slider2').each(function() {
+      sliders2.push(new Slider(this))
+    })
+
+    $('.slider3').each(function() {
+      sliders3.push(new Slider(this))
     })
   </script>
 
@@ -32,6 +59,16 @@
     <ul>
       <li><a href="javascript:sliders[0].goToPrev()">Prev</a></li>
       <li><a href="javascript:sliders[0].goToNext()">Next</a></li>
+    </ul>
+    
+    <ul>
+      <li><a href="javascript:sliders2[0].goToPrev()">Prev</a></li>
+      <li><a href="javascript:sliders2[0].goToNext()">Next</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="javascript:sliders3[0].goToPrev()">Prev</a></li>
+      <li><a href="javascript:sliders3[0].goToNext()">Next</a></li>
     </ul>
   </div>
 
